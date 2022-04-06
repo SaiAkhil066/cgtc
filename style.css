@@ -1,0 +1,114 @@
+
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    background: url(images/bg1.png) no-repeat center center fixed;
+    background-size: cover;
+    background-size: 70%;
+    background-position-x: left ;
+    background-position-y: 40px;
+}
+
+.container {
+    
+    position: absolute;
+    top: 20%;
+    left: 50%;
+}
+
+.container h1 {
+    display: inline-block;
+    font-size: 25px;
+    border-bottom: 2px solid rgb(233, 195, 23);
+    margin-bottom: 23px;
+    padding: 13px 0px;
+}
+
+.box {
+    width: 100%;
+    
+    
+    margin: 32px 0 ;
+    
+    
+}
+
+.box input {
+    
+    width: 75%;
+    background: none;
+    padding: 5px 10px;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    color: black;
+
+}
+.box i {
+    width: 25px;
+    
+    text-align: center;
+}
+
+.btn {
+    cursor: pointer;
+    outline: none;
+    width: 30%;
+    margin: 12px 0;
+    padding: 10px 21px;
+    border-radius: 10px;
+    border-color: 6px solid white;
+    font-size: 18px;
+    background: none;
+    font-weight: bold;
+    text-decoration: none;
+    
+
+}
+
+.btn:hover {
+    color: black;
+    background-color: rgb(233, 195, 23);
+}
+
+.signup :hover {
+    color: rgb(233, 195, 23);
+    text-decoration: none;
+
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,452 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="shortcut icon" href="images/titlebg.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <title>24th BATCH for IT</title>
+    <style>
+        body {
+            background-color: rgb(207, 247, 247);
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        .nav-item :hover {
+            color: black;
+        }
+
+        .nav-item {
+            margin-left: 25px;
+        }
+
+        .openImage {
+            width: 340px;
+            height: 340px;
+            position: relative;
+            float: right;
+            margin-top: -360px;
+            border-radius: 30px;
+            opacity: 90%;
+
+        }
+
+
+
+
+
+
+        .footer {
+            background: #333;
+        }
+
+        .footer .box-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+        }
+
+        .footer .box-container .box {
+            padding: 1rem 0;
+            flex: 1 1 25rem;
+        }
+
+        .footer .box-container .box h3 {
+            font-size: 2.5rem;
+            padding: .7rem 0;
+            color: #fff;
+        }
+
+        .footer .box-container .box p {
+            font-size: 1.5rem;
+            padding: .7rem 0;
+            color: #eee;
+        }
+
+        .footer .box-container .box a {
+            display: block;
+            font-size: 1.5rem;
+            padding: .7rem 0;
+            color: #eee;
+        }
+
+        .footer .box-container .box a:hover {
+            color: var(--orange);
+            text-decoration: underline;
+        }
+
+        .footer .credit {
+            text-align: center;
+            padding: 2rem 1rem;
+            margin-top: 1rem;
+            font-size: 2rem;
+            font-weight: normal;
+            color: #fff;
+            border-top: .1rem solid rgba(255, 255, 255, .2);
+        }
+
+        .footer .credit span {
+            color: var(--orange);
+        }
+
+        .underline-on-hover:hover {
+            text-decoration: underline;
+        }
+
+
+
+        .containerMenu {
+            display: inline-block;
+            cursor: pointer;
+        }
+
+        .bar1,
+        .bar2,
+        .bar3 {
+            width: 25px;
+            height: 2px;
+            background-color: white;
+            margin: 6px 0;
+            transition: 0.4s;
+        }
+
+        .change .bar1 {
+            -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+            transform: rotate(-45deg) translate(-9px, 6px);
+        }
+
+        .change .bar2 {
+            opacity: 0;
+        }
+
+        .change .bar3 {
+            -webkit-transform: rotate(45deg) translate(-8px, -8px);
+            transform: rotate(45deg) translate(-8px, -8px);
+        }
+
+        .navbar-toggler {
+            margin-right: 15px;
+
+            margin-bottom: px;
+            background: black;
+            opacity: 70%;
+
+        }
+
+        @media screen and (min-width: 601px) {
+            .text {
+                font-size: 30px;
+            }
+        }
+
+
+        @media screen and (max-width: 600px) {
+
+            .text,
+            #titleNav,
+            #basic {
+                font-size: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- STARTING NAV BAR-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-black sticky-top">
+
+        <a class="navbar-brand mb-0 h1" href="#">
+            <img src="images/titlebg.png" width="30" height="30" class="d-inline-block align-text-top">
+            <b style="color: honeydew;" id="titleNav"> COAST GUARD TRAINING CENTER </b>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+
+            <div class="containerMenu" onclick="myFunction(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+
+            <script>
+                function myFunction(x) {
+                    x.classList.toggle("change");
+                }
+            </script>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                <!--
+            <li class="nav-item">
+                <a class="nav-link active" href="#carouselExampleCaptions" aria-current="page"
+                    style="color: honeydew;">Home</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link active" href="#genesis" style="color: honeydew;">Genesis</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="#role" style="color: honeydew;">Role</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#courses" style="color: honeydew;">Courses</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#gallery" style="color: honeydew;">Gallery</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#contact_details" style="color: honeydew;">Contact Us</a>
+            </li>
+            <li class="nav-item">
+
+            </li>
+            -->
+            </ul>
+            <a href="it.html"><button style="margin-left: 20px; margin-right: 10px;" class="btn btn-outline-info btn-sm"
+                    data-toggle="modal" data-target="#signupModal">IT SECTION</button></a>
+        </div>
+
+
+    </nav>
+
+
+    <!-- STARTING HEADING-->
+
+    <div class="container-fluid">
+        <h1 id="basic" style="text-align: center; margin-top: 20px; font-family: 'Times New Roman', Times, serif; color: rgb(0, 86, 247);"> <b> IT
+            BASIC COURSE
+            - 24<sup>th</sup> BATCH </b> </h1> <br> <br>
+        <div class="container-fluid">
+            <h2 class="text"> <b>Training O I/C </b> : </h2>
+            <h2 class="text"> <b>Training Dy. O I/C </b> : Comdt Dinesh Kumar</h2>
+            <h2 class="text"> <b>Training Coordinator </b> : Comdt (JG) S Abhijit</h2>
+            <h2 class="text"> <b>Course Officer </b> : Sreekumar, Adh</h2>
+            <h2 class="text"> <b>Course Instructor </b> : Ragesh, P/Nvk (AP)</h2>
+            <h2 class="text"> <b>Civil Instructors </b> :Mrs Sini KR, Mrs Shobha, Mr Prudhvi Raj</h2> <br> <br>
+        </div>
+
+        <h1 style="text-align: center;"> <u>TRAINEES</u></h1> <br>
+        <input class="form-control me-2"
+            style="width: 340px; float: right; margin-bottom: 20px; max-width: 100%; height: auto; text-align: center;" id="myInput"
+            onkeyup="searchFun()" type="text" placeholder="Search" aria-label="Search">
+        <table style="max-width: 100%; height: auto;" class="table table-dark table-hover table-responsive" id="myTable">
+            <thead>
+                <tr class="header">
+                    <th scope="col">Sl No.</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Rank</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                <ul>
+                    <th scope="row"> 1</th>
+                    <td>Suresh Seera</td>
+                    <td>P/YTK(P)</td>
+                </ul>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Prem Singh</td>
+                    <td>P/YTK(P)</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>Shibu TV</td>
+                    <td>P/YTK(R)</td>
+                </tr>
+                <tr>
+                    <th scope="row">4</th>
+                    <td>Naveen Hanumanthu
+                    </td>
+                    <td>U/Ytk (R)</td>
+                </tr>
+                <tr>
+                    <th scope="row">5</th>
+                    <td>Lakhmi Chand
+                        Hansiwal</td>
+                    <td>P/Nvk (AE)</td>
+                </tr>
+                <tr>
+                    <th scope="row">6</th>
+                    <td>Abeeb Mon S</td>
+                    <td>P/Nvk (QA)</td>
+                </tr>
+                <tr>
+                    <th scope="row">7</th>
+                    <td>Kantamreddy
+                        Venkataramakrishna
+                    </td>
+                    <td>P/Nvk(RP)</td>
+                </tr>
+                <tr>
+                    <th scope="row">8</th>
+                    <td>Nandu S </td>
+                    <td>U/Nvk (RP)</td>
+                </tr>
+                <tr>
+                    <th scope="row">9</th>
+                    <td>Harish </td>
+                    <td>U/Nvk (P)</td>
+                </tr>
+                <tr>
+                    <th scope="row">10</th>
+                    <td>Santosh Kumar KS</td>
+                    <td>U/Nvk (QA)</td>
+                </tr>
+                <tr>
+                    <th scope="row">11</th>
+                    <td>Rajesh Rajak</td>
+                    <td>U/Nvk (R)</td>
+                </tr>
+                <tr>
+                    <th scope="row">12</th>
+                    <td>Vikas</td>
+                    <td>U/Nvk (QA)</td>
+                </tr>
+                <tr>
+                    <th scope="row">13</th>
+                    <td>Adarsh T</td>
+                    <td>U/Nvk (RP)</td>
+                </tr>
+                <tr>
+                    <th scope="row">14</th>
+                    <td>Biswadeb Bhakat</td>
+                    <td>U/Nvk (RP)</td>
+                </tr>
+                <tr>
+                    <th scope="row">15</th>
+                    <td>Rahul Sangwan</td>
+                    <td>U/Nvk (RO)</td>
+                </tr>
+                <tr>
+                    <th scope="row">16</th>
+                    <td>Sanjay Kumar</td>
+                    <td>Nvk (R)</td>
+                </tr>
+                <tr>
+                    <th scope="row">17</th>
+                    <td>Suresh Katam</td>
+                    <td>Nvk (RP)</td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+
+    <!-- STARTING FOOTER-->
+
+
+    <footer>
+        <section class="footer">
+            <div class="container">
+                <center>
+                    <div class="box-container">
+
+
+                        <div class="box">
+                            <h3 style="font-size: 25px;"> <u>Training Center</u></h3>
+                            <a style="font-size: 20px; text-decoration: none; color: #ccc;">
+                                Fort Kochi, Kerala</a> <br> <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3929.5778059385098!2d76.24607871458166!3d9.969040492872391!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b086daf9f861639%3A0x56d4f3504c511592!2sCoast%20Guard%20Training%20Centre%20CGTC!5e0!3m2!1sen!2sin!4v1648278124317!5m2!1sen!2sin"
+                                width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                        </div>
+
+
+
+                        <div class="container">
+                            <h4 style="color: #fff;"> For more details Follow Us on </h3>
+                                <h1>
+                                    <a style="text-decoration: none;" href="https://www.facebook.com/IndianCoastGuard/">
+                                        <i class="fa fa-facebook"
+                                            style="font: size 4px;  color:skyblue; text-shadow:2px 2px 4px #000000; "></i>
+                                    </a> &nbsp;
+                                    <a style="text-decoration: none;" href="https://www.instagram.com/indiancoastguard_official/?hl=en
+              "> <i class="fa fa-instagram" style="font: size 4px;color:Red; text-shadow:2px 2px 4px #000000;"></i>
+                                    </a> &nbsp;
+                                    <a style="text-decoration: none;" href="https://twitter.com/IndiaCoastGuard?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor
+              "> <i class="fa fa-twitter" style="font: size 4px;color:blue;text-shadow:2px 2px 4px #000000;"></i>
+                                    </a> &nbsp;
+                                    <a style="text-decoration: none;"
+                                        href="https://in.linkedin.com/company/indiancoastguard/"> <i
+                                            class="fa fa-linkedin"
+                                            style=" font: size 4px; color:lightblue;text-shadow:2px 2px 4px #000000;"></i>
+                                    </a>
+                                </h1>
+
+                        </div>
+                    </div>
+                </center>
+
+            </div>
+
+            <h1 style="font-size: 20px;" class="credit"> Created by <span> <a
+                        style="color: orange; text-decoration: none;" href="#"> N
+                        Sai Akhil, Nvk(R), ICG</a>
+                </span>
+            </h1>
+            </div>
+
+        </section>
+
+    </footer>
+
+
+    <!-- JAVA SCRIPT-->
+
+    <script>
+        const searchFun = () => {
+
+            let filter = document.getElementById('myInput').value.toUpperCase();
+
+            let myTable = document.getElementById('myTable');
+
+            let tr = myTable.getElementsByTagName('tr');
+
+            for (var i = 0; i < tr.length; i++) {
+
+                let td = tr[i].getElementsByTagName('td')[0];
+
+                if (td) {
+
+                    let textValue = td.textContent || td.innerHTML;
+
+                    if (textValue.toUpperCase().indexOf(filter) > -1) {
+
+                        tr[i].style.display = "";
+
+                    } else {
+                        tr[i].style.display = "none";
+                    }
+
+                }
+            }
+
+
+        }
+
+
+
+
+
+    </script>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

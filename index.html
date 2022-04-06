@@ -1,0 +1,759 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="images/titlebg.png" type="image/x-icon">
+
+    <title>CGTC | ICG</title>
+
+    <style>
+        body {
+            background-color: rgb(207, 247, 247);
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+
+
+        .nav-item :hover {
+            color: #eee;
+        }
+
+        .nav-item {
+            margin-left: 25px;
+        }
+
+        div.gallery {
+            margin: 5px;
+            border: 1px solid #ccc;
+            float: left;
+            width: 180px;
+        }
+
+        div.gallery:hover {
+            border: 1px solid #777;
+        }
+
+        div.gallery img {
+            width: 100%;
+            height: auto;
+        }
+
+        div.desc {
+            padding: 15px;
+            text-align: center;
+        }
+
+        .card-img-top:hover {
+            transition: 1s;
+            transform: scale(1.1);
+            border-radius: 50%;
+        }
+
+
+
+
+
+
+        .containerMenu {
+            display: inline-block;
+            cursor: pointer;
+        }
+
+        .bar1,
+        .bar2,
+        .bar3 {
+            width: 25px;
+            height: 2px;
+            background-color: white;
+            margin: 6px 0;
+            transition: 0.4s;
+        }
+
+        .change .bar1 {
+            -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+            transform: rotate(-45deg) translate(-9px, 6px);
+        }
+
+        .change .bar2 {
+            opacity: 0;
+        }
+
+        .change .bar3 {
+            -webkit-transform: rotate(45deg) translate(-8px, -8px);
+            transform: rotate(45deg) translate(-8px, -8px);
+        }
+
+        .navbar-toggler {
+            margin-right: 15px;
+
+            margin-bottom: px;
+            background: black;
+            opacity: 70%;
+
+        }
+
+
+
+
+
+
+
+
+        .footer {
+            background: #333;
+        }
+
+        .footer .box-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+        }
+
+        .footer .box-container .box {
+            padding: 1rem 0;
+            flex: 1 1 25rem;
+        }
+
+        .footer .box-container .box h3 {
+            font-size: 2.5rem;
+            padding: .7rem 0;
+            color: #fff;
+        }
+
+        .footer .box-container .box p {
+            font-size: 1.5rem;
+            padding: .7rem 0;
+            color: #eee;
+        }
+
+        .footer .box-container .box a {
+            display: block;
+            font-size: 1.5rem;
+            padding: .7rem 0;
+            color: #eee;
+        }
+
+        .footer .box-container .box a:hover {
+            color: var(--orange);
+            text-decoration: underline;
+        }
+
+        .footer .credit {
+            text-align: center;
+            padding: 2rem 1rem;
+            margin-top: 1rem;
+            font-size: 2rem;
+            font-weight: normal;
+            color: #fff;
+            border-top: .1rem solid rgba(255, 255, 255, .2);
+        }
+
+        .footer .credit span {
+            color: var(--orange);
+        }
+
+        .underline-on-hover:hover {
+            text-decoration: underline;
+        }
+
+        @media screen and (max-width: 600px) {
+
+
+            #titleNav {
+                font-size: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- STARTING NAV BAR-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-black sticky-top">
+
+        <a class="navbar-brand mb-0 h1" href="#">
+            <img src="images/titlebg.png" width="30" height="30" class="d-inline-block align-text-top">
+            <b style="color: honeydew;" id="titleNav"> COAST GUARD TRAINING CENTER </b>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+
+            <div class="containerMenu" onclick="myFunction(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+
+            <script>
+                function myFunction(x) {
+                    x.classList.toggle("change");
+                }
+            </script>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="#carouselExampleCaptions" aria-current="page"
+                        style="color: honeydew;">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="#genesis" style="color: honeydew;">Genesis</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="#role" style="color: honeydew;">Role</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#courses" style="color: honeydew;">Courses</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#gallery" style="color: honeydew;">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact_details" style="color: honeydew;">Contact Us</a>
+                </li>
+                <li class="nav-item">
+
+                </li>
+            </ul>
+            <a href="it.html"><button style="margin-left: 20px; margin-right: 10px;" class="btn btn-outline-info btn-lg"
+                    data-toggle="modal" data-target="#signupModal">IT
+                    Section</button></a>
+        </div>
+
+
+    </nav>
+
+    <!--STARTING HOME-->
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/opening11.jpg" class="d-block w-100" alt="...">
+                <div style="color: black; font-weight: bold; font-size: larger;"
+                    class="carousel-caption d-none d-md-block">
+                    <h5>CGTC OI/C</h5>
+                    <p>CHANGE OF COMMAND 16-03-22</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/opening22.jpg" class="d-block w-100" alt="...">
+                <div style="color: black; font-weight: bold;" class="carousel-caption d-none d-md-block">
+                    <h5>CGTC STAFF</h5>
+                    <p style="color: aliceblue;">COMMUNICATION INTERACTION PROGRAMME</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/opening33.jpg" class="d-block w-100" alt="...">
+                <div style="color: black; font-weight: bold; font-size: larger;"
+                    class="carousel-caption d-none d-md-block">
+                    <h5>CG LAW & OPS COURSE</h5>
+                    <p>WATERMANSHIP TRAINING</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/opening44.JPG" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block" style="font-size: larger;">
+                    <h5>CG LAW & OPS COURSE</h5>
+                    <p>BOARDING OPERATIONS AND TECHNIQUES.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- STARTING GENESIS-->
+
+
+    <div class="px-4 py-1 my-5 text-center" id="genesis">
+
+        <h3 class="display-10 fw-bold" style="color: black; font-family: Georgia, 'Times New Roman', Times, serif;">
+            <u>GENESIS</u>
+        </h3>
+    </div>
+
+
+
+    <div class="px-4 py-2 my-5 text-center" id="genesis">
+        <div class="container-fluid">
+            <img style=" max-width: 100%; height: auto; margin-top: -25px;" class="d-block mx-auto mb-4"
+                src="images/BACK PAGE.jpg" alt="" width="650" height="540">
+        </div>
+        <div class="container">
+            <h3 class="display-10 fw-bold" style="color: black; ">"The purpose of training is to tighten the slack,
+                toughen
+                the body and polish the spirit…. It never gets easier, you just get better and better…" <br> <br> "VAYAM
+                RAKSHAMAH" </h3>
+        </div>
+    </div>
+    <div class="container">
+        <h4> <u> Introduction:</u></h4> <br>
+        <p> <b> 1. </b> Training, built upon the pillars of knowledge, commitment and discipline, forms an indispensable
+            component
+            of military pedagogy, as it moulds the future leaders of the service. Training is the backbone of any
+            Organisation. Better training leads to better processes and more efficient work. In today’s ever-changing
+            and dynamic maritime domains, the importance of training has never been greater. The understanding of
+            ethics, ethos and character, are not relics from the shelves of the classroom, but are the terms and
+            concepts that dwell in the environment of knowledge, trust and commitment. It is within these organizational
+            concepts that foundation is sourced, reinforced and sustained for progression and expansion of the service.
+            The training centre aims to ensure a higher standard of competency so that the trainees can get oriented to
+            common set of knowledge and skills which will ultimately lead to fulfilment of organisational objectives.
+            <br> <br>
+            <b>2. </b> The Coast Guard Training Centre was established in 2002 and is functioning from the old building
+            of
+            CGDHQ-4. CGTC has been mandated to undertake specialized training for Coast Guard personnel on its statutory
+            Duties and Functions and to train personnel on CG related subjects. The disciplines on which CGTC imparts
+            training are Maritime Law and Law enforcement, Boarding Operations, Maritime Search and Rescue Operations,
+            Preservation & Protection of marine environment and Prevention & Control of Marine Pollution. Over a period
+            of time many new courses for officers, men and personnel from other agencies have been introduced including
+            training of Foreign Coast Guard personnel. <br> <br>
+
+            <b> 3. </b> The Vision and Mission Statement of this Training Centre are as appended below:-
+        </p>
+    </div>
+
+    <div class="px-4 py-2 my-2 text-center">
+
+        <h7 class="display-14 fw-bold" style="color: black; "> <U> VISION </U></h7> <br>
+        <p style="font-weight: bold;">“The Mission of this Training Centre is to conduct professional training for
+            Officers and EPs of Coast Guard and for other similar Organisations/littoral Coast Guards for making them
+            job ready at all levels, to carry out any roles and tasks at all times”</p>
+    </div>
+    <div class="px-4 py-2 my-2 text-center">
+
+        <h7 class="display-14 fw-bold" style="color: black; "> <U> MISSION </U></h7> <br>
+        <p style="font-weight: bold;">“The Vision of this Training Centre is to make it an “Institute of Excellence” in
+            the field of Maritime
+            Security, Safety, Marine Environment protection and Coastal Security”</p>
+    </div>
+
+    <div class="container">
+        <p> <b>4. </b> The Coast Guard Training Centre since inception has witnessed year on year increasing trends with
+            respect
+            to number of trainees in tandem with the courses undertaken. At present, 550 personnel from Coast Guard and
+            other organisations are being trained in 23 different courses and over 38 courses every year. CGTC (KOC)
+            also caters for maritime training for other Government agencies with marine element like Coastal Marine
+            Police, Indian Reserve Battalion (IRBN), Border Security Force (BSF) water wing, National Academy of
+            Customs, Indirect Taxes and Narcotics (NACEN). Today, having leapfrogged beyond South Asia, the training
+            centre has its alumni in eight countries following the first ever participation of countries from African
+            Region.
+            <br> <br>
+            <b> 5. </b> In the last 17 years, the Training Centre has successfully conducted 423 courses and trained
+            approximately6096 personnel including trainees from ICG, Bangladesh Coast Guard, Sri Lanka and Maldives
+            besides other national agencies. The Coast Guard Training Centre (Kochi) functions under the Command and
+            Control of the District Commander, No.4 Coast Guard District Headquarters, Fort Kochi.
+        </p>
+    </div>
+
+    <!-- STARTING ROLE-->
+
+    <div class="px-4 py-1 my-5 text-center" id="role">
+
+        <h3 class="display-10 fw-bold" style="color: black; font-family: Georgia, 'Times New Roman', Times, serif;">
+            <u>ROLE</u>
+        </h3>
+    </div>
+
+    <div class="px-4 py-2 my-5 text-center" id="genesis">
+        <div class="container-fluid">
+            <img style=" max-width: 100%; height: auto; margin-top: -25px;" class="d-block mx-auto mb-4"
+                src="images/role1.jpg" alt="" width="500" height="400">
+        </div>
+    </div>
+    <div class="container" style="border-top: -25px;">
+        <p> <b> (a)</b> Training of Coast Guard Personnel on statutory duties and functions of Coast Guard towards
+            professional
+            excellence. <br> <br>
+
+
+            <b>(b)</b> Impart quality training to personnel of other organisations on maritime subjects. <br> <br>
+
+
+            <b> (c)</b> Undertake development in training for officers and enrolled personnel of all ranks in the
+            service by
+            designing new courses. <br> <br>
+
+
+            <b> (d)</b> Introduce the aspect of research into the training curriculum and establish as centre for
+            excellence in
+            Maritime safety & security studies. <br> <br>
+
+
+
+            <b> (e)</b> To make this centre into think tank and academic centre for studies in Maritime Safety, Security
+            including Coastal Security. <br> <br>
+
+
+            <b> (f) </b> To professionally train officers and men of littoral Coast Guard Organisations. <br> <br>
+        </p>
+    </div>
+
+    <!-- STARTING COURSES-->
+    <div class="px-4 py-1 my-5 text-center" id="courses">
+
+        <h3 class="display-10 fw-bold" style="color: black; font-family: Georgia, 'Times New Roman', Times, serif;">
+            <u>COURSES</u>
+        </h3>
+    </div>
+
+    <div class="container">
+        <table style="max-width: 100%; height: auto;"
+            class="table table-light table-striped table-hover table-responsive">
+            <thead>
+                <tr>
+                    <th scope="col" style="text-align: center;">Sl No</th>
+                    <th scope="col" style="text-align: center;">Course name</th>
+                </tr>
+            </thead>
+            <tbody style="text-align: center;">
+                <tr>
+                    <th scope="row">1</th>
+                    <td>CG Law & OPS (GD/PN)</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>CG Law & OPS (CPL)</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>CG Law & OPS (Women)</td>
+                </tr>
+                <tr>
+                    <th scope="row">4</th>
+                    <td>CO/XO PCT {COMDT COMDT (JG)}</td>
+                </tr>
+                <tr>
+                    <th scope="row">5</th>
+                    <td>Specific TRG for CPL Holder (A/c)</td>
+                </tr>
+                <tr>
+                    <th scope="row">6</th>
+                    <td><a style="text-decoration: none; color: black" href="it.html  ">IT Assistant (Basic) Course </a>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">7</th>
+                    <td>SO Law and OPS</td>
+                </tr>
+                <tr>
+                    <th scope="row">8</th>
+                    <td>Works Capsule for SO</td>
+                </tr>
+                <tr>
+                    <th scope="row">9</th>
+                    <td>7.62 MM Air Version</td>
+                </tr>
+                <tr>
+                    <th scope="row">10</th>
+                    <td>Boarding Operations/Unarmed Combat</td>
+                </tr>
+                <tr>
+                    <th scope="row">11</th>
+                    <td>Kerala Police Personnel</td>
+                </tr>
+                <tr>
+                    <th scope="row">12</th>
+                    <td>Light House and Light Ships Personnel</td>
+                </tr>
+                <tr>
+                    <th scope="row">13</th>
+                    <td>Pre-SD</td>
+                </tr>
+                <tr>
+                    <th scope="row">14</th>
+                    <td>Pre-AIBC</td>
+                </tr>
+                <tr>
+                    <th scope="row">15</th>
+                    <td>Pre-ACM(D)</td>
+                </tr>
+                <tr>
+                    <th scope="row">16</th>
+                    <td>Pre-PTI</td>
+                </tr>
+                <tr>
+                    <th scope="row">17</th>
+                    <td>Pre TRG for BSF</td>
+                </tr>
+                <tr>
+                    <th scope="row">18</th>
+                    <td>Marine TRG for Foregin Personnel</td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+
+    <!-- STARTING GALLERY-->
+
+    <div class="px-4 py-1 my-5 text-center" id="gallery">
+
+        <h3 class="display-10 fw-bold" style="color: black; font-family: Georgia, 'Times New Roman', Times, serif;">
+            <u>GALLERY</u>
+        </h3>
+    </div>
+
+    <div class="container">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="card h-100">
+                    <a href="images/gal1.jpg"><img style="height: 260px;" src="images/gal1.jpg" class="card-img-top"
+                            alt="..."> </a>
+                    <div class="card-body">
+                        <h5 class="card-title">Adventures on Water Scooter</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <a href="images/gal2.png"><img src="images/gal2.png" class="card-img-top" alt="..."> </a>
+                    <div class="card-body">
+                        <h5 class="card-title">Operations on Gemini Boat</h5>
+                        <p class="card-text"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <a href="images/gal3.png"> <img src="images/gal3.png" class="card-img-top" alt="..."> </a>
+                    <div class="card-body">
+                        <h5 class="card-title">Dornier: Wings in the Air </h5>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <a href="images/gal4.jpg"> <img style="height: 280px;" src="images/gal4.jpg" class="card-img-top"
+                            alt="..."></a>
+                    <div class="card-body">
+                        <h5 class="card-title">C-150: Commissioning ceremony</h5>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <a href="images/gal5.jpg"> <img src="images/gal5.jpg" class="card-img-top" alt="..."> </a>
+                    <div class="card-body">
+                        <h5 class="card-title">Hovercraft: Drifting in the Ocean</h5>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <a href="images/gal6.jpg"> <img src="images/gal6.jpg" class="card-img-top" alt="..."> </a>
+                    <div class="card-body">
+                        <h5 class="card-title">GSL: Guard of Honour</h5>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <a href="images/gal7.JPG"> <img style="height: 280px;" src="images/gal7.JPG" class="card-img-top"
+                            alt="..."> </a>
+                    <div class="card-body">
+                        <h5 class="card-title">Diving Training</h5>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <a href="images/gal8.JPG"> <img src="images/gal8.JPG" class="card-img-top" alt="..."> </a>
+                    <div class="card-body">
+                        <h5 class="card-title">CGTC - Change Of Command</h5>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <a href="images/gal9.JPG"> <img src="images/gal9.JPG" class="card-img-top" alt="..."> </a>
+                    <div class="card-body">
+                        <h5 class="card-title">CG law & Ops: Self Defense Training</h5>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <a href="images/gal10.JPG"><img style="height: 280px;" src="images/gal10.JPG" class="card-img-top"
+                            alt="..."> </a>
+                    <div class="card-body">
+                        <h5 class="card-title">Interaction and Celebrating 70 years of Constitution with Fisherman.</h5>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <a href="images/gal11.JPG"><img src="images/gal11.JPG" class="card-img-top" alt="..."> </a>
+                    <div class="card-body">
+                        <h5 class="card-title">Water Training</h5>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <a href="images/gal12.jpg"> <img src="images/gal12.jpg" class="card-img-top" alt="..."> </a>
+                    <div class="card-body">
+                        <h5 class="card-title">Physical training with Foreign Officers</h5>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- STARTING CONTACT DETAILS-->
+
+
+    <div class="px-4 py-1 my-5 text-center" id="contact_details">
+
+        <h3 class="display-10 fw-bold" style="color: black; font-family: Georgia, 'Times New Roman', Times, serif;">
+            <u>CONTACT DETAILS</u>
+        </h3>
+    </div>
+    <div class="container">
+        <table class="table table-primary table-striped table-hover table-responsive">
+
+            <tbody style="text-align: center;">
+                <tr>
+                    <th scope="row">Officer-In-Charge</th>
+                    <td>0484-2217934</td>
+                </tr>
+                <tr>
+                    <th scope="row">Dy Officer-In-Charge</th>
+                    <td>0484-2215593</td>
+                </tr>
+                <tr>
+                    <th scope="row">Training Office</th>
+                    <td>0484-2216300</td>
+                </tr>
+                <tr>
+                    <th scope="row">Fax</th>
+                    <td>0484-2216300</td>
+                </tr>
+                <tr>
+                    <th scope="row">E Mail</th>
+                    <td>cgtc-kochi@indiancoastguard.nic.in</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <br>
+    <!-- STARTING FOOTER-->
+
+
+    <footer>
+        <section class="footer">
+            <div class="container">
+                <center>
+                    <div class="box-container">
+
+
+                        <div class="box">
+                            <h3 style="font-size: 25px;"> <u>Training Center</u></h3>
+                            <a style="font-size: 20px; text-decoration: none; color: #ccc;">
+                                Fort Kochi, Kerala</a> <br> <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3929.5778059385098!2d76.24607871458166!3d9.969040492872391!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b086daf9f861639%3A0x56d4f3504c511592!2sCoast%20Guard%20Training%20Centre%20CGTC!5e0!3m2!1sen!2sin!4v1648278124317!5m2!1sen!2sin"
+                                width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                        </div>
+
+
+
+                        <div class="container">
+                            <h4 style="color: #fff;"> For more details Follow Us on </h3>
+                                <h1>
+                                    <a style="text-decoration: none;" href="https://www.facebook.com/IndianCoastGuard/">
+                                        <i class="fa fa-facebook"
+                                            style="font: size 4px; color:skyblue; text-shadow:2px 2px 4px #000000; "></i>
+                                    </a> &nbsp;
+                                    <a style="text-decoration: none;" href="https://www.instagram.com/indiancoastguard_official/?hl=en
+                  "> <i class="fa fa-instagram"
+                                            style="font: size 4px; color:Red; text-shadow:2px 2px 4px #000000;"></i>
+                                    </a> &nbsp;
+                                    <a style="text-decoration: none;" href="https://twitter.com/IndiaCoastGuard?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor
+                  "> <i class="fa fa-twitter" style="font: size 4px; color:blue;text-shadow:2px 2px 4px #000000;"></i>
+                                    </a> &nbsp;
+                                    <a style="text-decoration: none;"
+                                        href="https://in.linkedin.com/company/indiancoastguard/"> <i
+                                            class="fa fa-linkedin"
+                                            style=" font: size 4px; color:lightblue;text-shadow:2px 2px 4px #000000;"></i>
+                                    </a>
+                                </h1>
+
+                        </div>
+                    </div>
+                </center>
+
+            </div>
+
+            <h1 style="font-size: 20px;" class="credit"> Created by <span> <a
+                        style="color: orange; text-decoration: none;" href="#"> N
+                        Sai Akhil, Nvk(R), ICG</a>
+                </span>
+            </h1>
+            </div>
+
+        </section>
+
+    </footer>
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+-->
+</body>
+
+</html>
